@@ -1,4 +1,9 @@
 package com.dailycodework.dreamshop.exceptions;
 
-public class ResourceNotFoundException {
+import org.jetbrains.annotations.NotNull;
+
+public class ResourceNotFoundException extends RuntimeException {
+    public ResourceNotFoundException(String message) {
+        super(message);
+    }
 }

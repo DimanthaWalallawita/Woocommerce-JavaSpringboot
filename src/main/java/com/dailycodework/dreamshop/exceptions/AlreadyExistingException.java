@@ -1,4 +1,9 @@
 package com.dailycodework.dreamshop.exceptions;
 
-public class AlreadyExistingException {
+import org.jetbrains.annotations.NotNull;
+
+public class AlreadyExistingException extends RuntimeException {
+    public AlreadyExistingException(String message) {
+        super(message);
+    }
 }
